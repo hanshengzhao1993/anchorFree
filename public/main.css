@@ -1,0 +1,9 @@
+body{
+  background-image: url('./bg.jpg');
+  background-size: cover;
+}
+.header{
+  width: 400px;
+  height: 200px;
+  background-color: #cdd2d8;
+}
