@@ -71,6 +71,7 @@ nav ul li {
   margin: 2px;
   float: left;
 }
+
 nav ul li:hover {
   background-color: #e1e1ed;
 }
@@ -82,8 +83,11 @@ aside h4{
 }
 aside *{
   padding: 1px 5px;
-
 }
+nav ul li{
+  color: blue;
+}
+
 .aside-line{
   height: 2px;
   background-color: white;
@@ -142,5 +146,7 @@ a{
 .show{
   display: block;
 }
-
+.grey-color-button{
+  color: grey;
+}
 
