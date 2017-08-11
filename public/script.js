@@ -18,8 +18,8 @@ window.onload = ()=> {
   let headerButtons = document.getElementById('header');
   headerButtons.addEventListener('click', (event)=>{
     event.preventDefault();
-    if(event.srcElement.tagName === 'A'){
-      let articleNumber = event.srcElement.innerHTML.slice(5);
+    if(event.target.tagName === 'A'){
+      let articleNumber = event.target.innerHTML.slice(5);
       let articleNames = document.getElementsByTagName('article');
       for(let i = 0; i< articleNames.length; i++){
         if(articleNames[i].id.includes(articleNumber)){
@@ -28,9 +28,7 @@ window.onload = ()=> {
           if(articleNames[i].className.includes('show')){
             // first check if element is currently being showed
             // dont do anything
-            console.log('clicked on the same as ths showing')
           } else {
-            console.log('clicked now the same as showing')
             for(let j = 0; j< articleNames.length; j++){
               if(articleNames[j].className.includes('show')){
                 removeClass(articleNames[j], 'show');
@@ -42,7 +40,8 @@ window.onload = ()=> {
           }
         }
       }
-      
+
+      // change the current location of the nav button when clicking header buttons
       for(let j = 0; j< articleNames.length; j++){
         if(articleNames[j].className.includes('show')){
           let navButtonNumber = j + 1;
@@ -77,10 +76,10 @@ window.onload = ()=> {
   // nav button click event
   let navButtons = document.getElementById('nav-buttons');
   navButtons.addEventListener('click', (event)=>{
-    let articleNumber = event.srcElement.innerHTML.slice(5);
+    let articleNumber = event.target.innerHTML.slice(5);
     let articleNames = document.getElementsByTagName('article');
     event.preventDefault();
-    if(event.srcElement.tagName === 'LI'){
+    if(event.target.tagName === 'LI'){
       for(let i = 0; i< articleNames.length; i++){
         if(articleNames[i].id.includes(articleNumber)){
           // should take out no-show if there is a class
@@ -102,7 +101,7 @@ window.onload = ()=> {
       }
     }
     // changing the text of the nav 
-    if(event.srcElement){
+    if(event.target){
       // first find which article is beign displayed
       for(let j = 0; j< articleNames.length; j++){
         if(articleNames[j].className.includes('show')){
