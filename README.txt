@@ -17,3 +17,9 @@ Please pay attention to following things:
  - Save your work in github
 
 Numbers of hours spend: 5 Hours
+
+In order for me to send this file I had to change all the JS filed to JAVASCRIPT. So please change all the .JAVASCRIPT files to .js.
+
+Start app 
+- npm install
+- node server.js
