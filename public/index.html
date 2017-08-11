@@ -6,7 +6,7 @@
   <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <!-- Logo -->
         <h1 class="logo">LOGO</h1>
 
@@ -21,8 +21,8 @@
         <!-- <p> <a href="">Menu 1</a> | <a href="">Menu 2</a>  | <a href="">Menu 3</a></p> -->
     </header>
 
-    <main class="column-layout">
-      <nav class="col nav">
+    <main class="column-layout" >
+      <nav class="col nav" id="nav-buttons">
         <ul>
           <li><a href="">Menu 1</a></li>
           <li><a href="">Menu 2</a></li>
@@ -32,8 +32,8 @@
         </ul> 
       </nav>
 
-      <article class="col article">
-        <h3>Lorem ipsum dolor sit amet</h3>
+      <article class="col article show" id="article-1">
+        <h3>Lorem ipsum dolor sit amet 1</h3>
 
         <div class="article-line"></div>
 
@@ -50,11 +50,83 @@
         </p>
       </article>
 
+      <article class="col article hide" id="article-2">
+        <h3>Vel pulvinar metus tincidunt at 2</h3>
+
+        <div class="article-line"></div>
+
+        <p>Quisque enim enim, placerat quis mauris sed, aliquet dapibus nunc. Maecenas eleifend congue pretium. Etiam eleifend eros vel orci rutrum lobortis. Praesent leo erat, tristique nec porttitor non, dictum id diam. Praesent eleifend odio id diam dictum facilisis in vel nisi. Morbi dui dui, tempus at condimentum vitae, viverra sed augue. Donec laoreet est arcu, vel pulvinar metus tincidunt at. Nulla fermentum velit a purus interdum, vel congue ligula vehicula.
+        </p>
+        <img src="./raw_sources/img.jpg" alt="Cliff View" >
+
+        <p>
+        Cras efficitur varius odio et venenatis. Praesent gravida a lacus ac tincidunt. Duis accumsan tristique lectus, non pulvinar est aliquam id. Ut pharetra dolor sit amet enim vehicula congue. Quisque auctor leo quis dolor ornare, quis fringilla lectus sagittis. Sed augue tortor, pretium id erat ac, placerat convallis arcu. Fusce porttitor quis magna in interdum. Mauris porttitor dignissim mauris, nec finibus eros dignissim in. Suspendisse ultricies ultricies mollis. Morbi eget libero tincidunt, placerat eros eu, fermentum elit. Etiam ut congue ex, et varius odio. Donec mattis porttitor varius.
+        </p>
+
+        <p>
+        Maecenas scelerisque scelerisque libero, ac consectetur ante efficitur vel. Nunc interdum nec diam a convallis. Vestibulum pellentesque dictum erat ut tristique. Cras ut magna vitae purus tristique tristique. Morbi orci leo, semper nec porta vel, porta tristique dui. Ut non sem vitae felis accumsan sagittis id eu mauris. Quisque sit amet interdum sapien. Morbi interdum, quam bibendum vestibulum tempus, nisl sem finibus tortor, vitae auctor lorem urna in turpis. Ut lorem orci, malesuada vitae porta ac, interdum eu odio.
+        </p>
+      </article>
+
+      <article class="col article hide" id="article-3">
+        <h3>Rhoncus quis lacus 3</h3>
+
+        <div class="article-line"></div>
+
+        <p>Curabitur ultrices, augue sit amet lobortis porttitor, enim risus hendrerit urna, id consectetur massa ex congue nisi. Nam eleifend dapibus nibh id hendrerit. Etiam pretium nunc felis, a auctor tellus vehicula vel. Morbi consequat lectus et enim elementum vestibulum sit amet nec est. Vestibulum sollicitudin erat ac orci tempus efficitur. Vivamus lacinia nisl luctus, accumsan nulla ac, hendrerit diam. Morbi tempor at massa in cursus. Mauris facilisis vestibulum rhoncus. Nunc ut lacinia justo. Aenean rutrum elit tortor, nec pellentesque dolor placerat at. Sed viverra, ante vitae eleifend pretium, est dui tempor sapien, sed pretium sapien ligula et nisi. Suspendisse vel facilisis nisi. Curabitur laoreet sed libero nec convallis. Morbi ultricies leo id sapien finibus vulputate. Quisque tincidunt mauris eget nisl tristique varius.
+        </p>
+        <img src="./raw_sources/img.jpg" alt="Cliff View" >
+
+        <p>
+        Mauris finibus iaculis volutpat. Nulla vel metus finibus, viverra felis at, tincidunt est. Nulla eu maximus ligula. Morbi id libero ipsum. Nulla ultricies tristique erat in hendrerit. Praesent tincidunt viverra purus sed bibendum. Aenean semper lectus in arcu tempor, ac bibendum ex euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sit amet aliquam dui, quis interdum nulla. Etiam quis velit non massa finibus dictum et at sem. Praesent vitae maximus nibh. Cras tincidunt pulvinar arcu nec ultricies. In molestie tellus ut velit dapibus blandit. Pellentesque accumsan odio id velit suscipit feugiat.
+        </p>
+
+        <p>
+        Maecenas scelerisque scelerisque libero, ac consectetur ante efficitur vel. Nunc interdum nec diam a convallis. Vestibulum pellentesque dictum erat ut tristique. Cras ut magna vitae purus tristique tristique. Morbi orci leo, semper nec porta vel, porta tristique dui. Ut non sem vitae felis accumsan sagittis id eu mauris. Quisque sit amet interdum sapien. Morbi interdum, quam bibendum vestibulum tempus, nisl sem finibus tortor, vitae auctor lorem urna in turpis. Ut lorem orci, malesuada vitae porta ac, interdum eu odio.
+        </p>
+      </article>
+
+      <article class="col article hide" id="article-4">
+        <h3>Curabitur vel eros id erat 4</h3>
+
+        <div class="article-line"></div>
+
+        <p>Ut consectetur laoreet efficitur. Donec vestibulum, ipsum a pellentesque ultricies, leo odio viverra velit, non ultrices lectus quam nec lectus. Praesent viverra maximus est sed mollis. Fusce et massa justo. Ut ut nisl felis. Sed consectetur vel tortor quis vestibulum. Ut libero erat, maximus id semper a, ornare et sapien. Sed nibh augue, sollicitudin suscipit tempus a, auctor a augue. Praesent congue posuere maximus. Maecenas fringilla odio quis ornare ultricies. Donec porttitor felis ac nibh convallis elementum. Mauris vulputate convallis dui, eu sagittis nibh aliquam quis. Etiam pharetra, lectus et vestibulum aliquam, mauris dolor venenatis libero, vitae volutpat libero quam et lorem. Pellentesque molestie sapien consectetur nunc maximus congue.
+        </p>
+        <img src="./raw_sources/img.jpg" alt="Cliff View" >
+
+        <p>
+        Nam mauris neque, maximus vitae condimentum sed, cursus non tortor. Vivamus efficitur diam nec nisi auctor pulvinar sed in erat. Suspendisse consequat libero ligula, id pharetra arcu dictum vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum magna non tellus tristique, at ultricies ex rutrum. Pellentesque quis eros ac ipsum sagittis efficitur at vel diam. Donec finibus fermentum imperdiet. Aenean laoreet tincidunt neque rhoncus finibus. Sed aliquet augue quis nibh commodo, vitae blandit quam facilisis. Nam iaculis, tellus tristique mollis tristique, orci ipsum tempor felis, id volutpat massa justo quis quam. Aliquam eget leo convallis, dapibus mi sit amet, faucibus nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In id dui ultricies arcu mattis facilisis sed id nisi.
+        </p>
+
+        <p>
+        Maecenas scelerisque scelerisque libero, ac consectetur ante efficitur vel. Nunc interdum nec diam a convallis. Vestibulum pellentesque dictum erat ut tristique. Cras ut magna vitae purus tristique tristique. Morbi orci leo, semper nec porta vel, porta tristique dui. Ut non sem vitae felis accumsan sagittis id eu mauris. Quisque sit amet interdum sapien. Morbi interdum, quam bibendum vestibulum tempus, nisl sem finibus tortor, vitae auctor lorem urna in turpis. Ut lorem orci, malesuada vitae porta ac, interdum eu odio.
+        </p>
+      </article>
+
+      <article class="col article hide" id="article-5">
+        <h3>Pellentesque eleifend nec leo tempor accumsan 5</h3>
+
+        <div class="article-line"></div>
+
+        <p>In quis viverra lectus, ut imperdiet tortor. Nam pulvinar justo accumsan velit faucibus, sed sollicitudin ligula vulputate. Morbi molestie nisi facilisis convallis commodo. Proin congue erat risus, in porta diam ullamcorper a. Pellentesque a odio augue. Praesent non auctor arcu, vitae dictum quam. Donec ut leo quis nulla pretium vestibulum. Fusce pretium turpis id elit efficitur maximus. Mauris a malesuada est. Suspendisse in felis finibus, feugiat nisi quis, cursus nisl. In nec finibus tellus. Duis purus ligula, lacinia quis semper fringilla, hendrerit quis tellus. Proin vestibulum eros eu tortor ullamcorper volutpat.
+        </p>
+        <img src="./raw_sources/img.jpg" alt="Cliff View" >
+
+        <p>
+        Nunc nec mi vehicula, mattis risus blandit, sollicitudin lacus. Sed pulvinar, eros vitae tempor lobortis, velit ligula ultrices elit, tempus blandit neque velit et purus. In facilisis consectetur tincidunt. Etiam accumsan nulla a sem ultrices, ut tincidunt urna tincidunt. Morbi leo justo, iaculis in nisl sed, pharetra interdum quam. Nulla facilisi. Praesent nec libero magna. Quisque ultricies eget orci et pretium. Proin imperdiet nisl vel nisi mattis gravida. Donec feugiat ipsum ut eros lobortis malesuada. Maecenas pharetra ornare urna quis ultrices. Curabitur mi nisi, condimentum eget porttitor at, consectetur nec risus. Duis eget neque tellus. Vivamus magna ipsum, blandit suscipit luctus quis, tempor eget metus.
+        </p>
+
+        <p>
+        Maecenas scelerisque scelerisque libero, ac consectetur ante efficitur vel. Nunc interdum nec diam a convallis. Vestibulum pellentesque dictum erat ut tristique. Cras ut magna vitae purus tristique tristique. Morbi orci leo, semper nec porta vel, porta tristique dui. Ut non sem vitae felis accumsan sagittis id eu mauris. Quisque sit amet interdum sapien. Morbi interdum, quam bibendum vestibulum tempus, nisl sem finibus tortor, vitae auctor lorem urna in turpis. Ut lorem orci, malesuada vitae porta ac, interdum eu odio.
+        </p>
+      </article>
+
       <aside class="col aside">
         <h3> Right Side</h3>
         <div class="aside-line"></div>
         <div>
-          <h4>Curabitur vel eros</h4>
+          <h4>Curabitur vel eros 5</h4>
           <p>Mauris finibus iaculis volutpat. Nulla vel metus finibus, viverra felis at, tincidunt est. Nulla eu maximus ligula. Morbi id libero ipsum. Nulla ultricies tristique erat in hendrerit.</p>
         </div>
 
